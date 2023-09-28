@@ -37,3 +37,29 @@
     <span> La somma dei numeri che vanno da 1 a 9 è: @PrintSumNumbers(9)</span>
 </div>
 
+<div>
+    <p>
+        3. Contare quante volte la lettera a è presente nalla frase "nel mezzo del cammin di nostra vita" e stampare questo valore in pagina
+    </p>
+    @{
+
+        int CountAFrequency(string phrase)
+        {
+            int count = 0;
+            for (int i = 0; i < phrase.Length; i++)
+            {
+                if (phrase[i] == 'a')
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+    }
+
+    <p> Nella frase "nel mezzo del cammin di nostra vita" la lettera a è contenuta @CountAFrequency("nel mezzo del cammin di nostra vita") volte </p>
+
+</div>
+
+
+
