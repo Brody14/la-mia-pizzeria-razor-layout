@@ -1,7 +1,3 @@
-.description{
-    text-align: justify;
-}
-
 /*USER INDEX*/
 
 main {
@@ -13,4 +9,9 @@ main {
 
 .banner{
     background-image: url(/img/banner.jpg);
+}
+
+.admin-icon {
+    color: #ca9e01;
+    font-size: 25px;
 }
