@@ -97,5 +97,28 @@
 
 </div>
 
+<div>
+    <p>
+        6. Partendo dalla data di oggi (usando la classe DateTime) stampare in pagina
+        a. la data di 7 giorni fa
+        b. che giorno della settimana è oggi (il risultato dovrà essere il nome del giorno (Lunedì, Martedì, ...)
+        c. che giorno della settimana sarà nello stesso giorno e mese di oggi ma tra un anno (il risultato dovrà essere il nome del giorno (Lunedì, Martedì, ...)
+    </p>
+
+    @{
+        DateTime date = DateTime.Now;
+        DateTime aWeekAgo = date.AddDays(-7);
+        DateTime afterAYear = date.AddYears(1);
+    }
+
+    <ul>
+        <li>La data di oggi: @date.ToString("dd/MM/yyyy")</li>
+        <li>La data di 7 giorni fa: @aWeekAgo.ToString("dd/MM/yyyy")</li>
+        <li>Oggi è @date.ToString("dddd")</li>
+        <li>Il @afterAYear.ToString("dd/MM/yyyy") sarà @afterAYear.ToString("dddd")</li>
+    </ul>
+  
+</div>
+
 
 
